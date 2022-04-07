@@ -1,0 +1,18 @@
+name: eth
+version: 0.1.0
+description: "A straightforward library to build, sign, and broadcast Ethereum transactions."
+
+authors:
+  - Afr Schoe <crystal@q9f.cc>
+
+crystal: 1.3.2
+
+license: APLv2
+
+dependencies:
+  secp256k1:
+    github: q9f/secp256k1.cr
+    version: "~> 0.5"
+  rlp:
+    github: q9f/rlp.cr
+    version: "~> 0.1"
