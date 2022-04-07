@@ -12,13 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# require "big/big_int"
-# require "openssl/digest"
-# require "openssl/hmac"
-# require "sha3"
-# require "rlp"
+require "rlp"
+require "secp256k1"
+require "sha3"
 
+require "./eth/address"
+require "./eth/key"
+require "./eth/util"
 require "./eth/version"
 
+# Provides the `Eth` module, a straightforward library to build, sign,
+# and broadcast Ethereum transactions.
 module Eth
+  # Entirely inheriting the `Secp256k1::Num` class for convenience.
+  class Num < Secp256k1::Num; end
 end
