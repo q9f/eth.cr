@@ -16,7 +16,6 @@ require "../spec_helper"
 
 describe Chain do
   it "has eip155 chain ids for mainnets, testnets, and devnets" do
-
     # Chain IDs for selected mainnets
     Chain::ETHEREUM.should eq 1
     Chain::EXPANSE.should eq 2
@@ -64,20 +63,20 @@ describe Chain do
   end
 
   it "can convert ethereum recovery ids to v" do
-    Chain.to_v(0). should eq 27
-    Chain.to_v(1). should eq 28
-    Chain.to_v(0, Chain::ETHEREUM). should eq 37
-    Chain.to_v(1, Chain::ETHEREUM). should eq 38
+    Chain.to_v(0).should eq 27
+    Chain.to_v(1).should eq 28
+    Chain.to_v(0, Chain::ETHEREUM).should eq 37
+    Chain.to_v(1, Chain::ETHEREUM).should eq 38
   end
 
   it "can convert other chain's recovery ids to v" do
-    Chain.to_v(0, Chain::CLASSIC). should eq 157
-    Chain.to_v(1, Chain::GNOSIS). should eq 236
-    Chain.to_v(0, Chain::ARBITRUM). should eq 84357
-    Chain.to_v(1, Chain::MORDEN_CLASSIC). should eq 160
-    Chain.to_v(0, Chain::GOERLI_OPTIMISM). should eq 875
-    Chain.to_v(1, Chain::RINKEBY_ARBITRUM). should eq 843258
-    Chain.to_v(0, Chain::PRIVATE_GETH). should eq 2709
+    Chain.to_v(0, Chain::CLASSIC).should eq 157
+    Chain.to_v(1, Chain::GNOSIS).should eq 236
+    Chain.to_v(0, Chain::ARBITRUM).should eq 84357
+    Chain.to_v(1, Chain::MORDEN_CLASSIC).should eq 160
+    Chain.to_v(0, Chain::GOERLI_OPTIMISM).should eq 875
+    Chain.to_v(1, Chain::RINKEBY_ARBITRUM).should eq 843258
+    Chain.to_v(0, Chain::PRIVATE_GETH).should eq 2709
   end
 
   it "can recover v from ethereum recovery id" do
