@@ -17,6 +17,7 @@ require "secp256k1"
 require "sha3"
 
 require "./eth/address"
+require "./eth/chain"
 require "./eth/key"
 require "./eth/util"
 require "./eth/version"
