@@ -1,6 +1,6 @@
 # eth.cr
 
-[![Build Status](https://img.shields.io/github/workflow/status/q9f/eth.cr/Crystal)](https://github.com/q9f/eth.cr/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/q9f/eth.cr/crystal.yml?branch=main)](https://github.com/q9f/eth.cr/actions)
 [![Language](https://img.shields.io/github/languages/top/q9f/eth.cr?color=black)](https://github.com/q9f/eth.cr/search?l=crystal)
 [![License](https://img.shields.io/github/license/q9f/eth.cr.svg?color=black)](LICENSE)
 
