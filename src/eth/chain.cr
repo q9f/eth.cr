@@ -11,10 +11,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# Provides the `Eth` module, a straightforward library to build, sign,
-# and broadcast Ethereum transactions.
-module Eth
-  # The `VERSION` of the `Eth` module.
-  VERSION = "0.1.1"
-end
