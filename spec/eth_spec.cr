@@ -16,6 +16,6 @@ require "./spec_helper"
 
 describe Eth do
   it "has some version string" do
-    VERSION.should eq "0.1.1"
+    VERSION.should eq "0.1.2"
   end
 end

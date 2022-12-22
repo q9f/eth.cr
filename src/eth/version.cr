@@ -16,5 +16,5 @@
 # and broadcast Ethereum transactions.
 module Eth
   # The `VERSION` of the `Eth` module.
-  VERSION = "0.1.1"
+  VERSION = "0.1.2"
 end
