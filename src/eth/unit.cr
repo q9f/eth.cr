@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Provides a collection of utilities for convenience, e.g., to bind
-# relevant hashing algorithms.
+# Provides constants for common Ethereum units.
 module Eth::Unit
   extend self
 
