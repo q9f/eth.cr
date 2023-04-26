@@ -12,20 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require "rlp"
-require "secp256k1"
-require "sha3"
+require "../spec_helper"
 
-require "./eth/address"
-require "./eth/chain"
-require "./eth/key"
-require "./eth/unit"
-require "./eth/util"
-require "./eth/version"
+describe Unit do
+  it "understands Ethereum units" do
+    Unit::WEI.dec.should eq 1
+    Unit::BABBAGE.dec.should eq 1_000
+    Unit::LOVELACE.dec.should eq 1_000_000
+    Unit::SHANNON.dec.should eq 1_000_000_000
+    Unit::SZABO.dec.should eq 1_000_000_000_000
+    Unit::FINNEY.dec.should eq 1_000_000_000_000_000
+    Unit::ETHER.dec.should eq 1_000_000_000_000_000_000
 
-# Provides the `Eth` module, a straightforward library to build, sign,
-# and broadcast Ethereum transactions.
-module Eth
-  # Entirely inheriting the `Secp256k1::Num` class for convenience.
-  class Num < Secp256k1::Num; end
+    Unit::GWEI.dec.should eq 1_000_000_000
+    Unit::ETH.dec.should eq 1_000_000_000_000_000_000
+  end
 end

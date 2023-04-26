@@ -87,8 +87,8 @@ module Eth::Chain
   # Chain ID for Sepolia testnet.
   SEPOLIA = 11155111
 
-  # Chain ID for Holesovice testnet.
-  HOLESOVICE = 11166111
+  # Chain ID for Holesky testnet.
+  HOLESKY = 11166111
 
   # Chain ID for the geth private network preset.
   PRIVATE_GETH = 1337
