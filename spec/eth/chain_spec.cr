@@ -42,7 +42,7 @@ describe Chain do
     Chain::RINKEBY_ARBITRUM.should eq 421611
     Chain::GOERLI_ARBITRUM.should eq 421613
     Chain::SEPOLIA.should eq 11155111
-    Chain::HOLESOVICE.should eq 11166111
+    Chain::HOLESKY.should eq 11166111
 
     # Chain IDs for selected private networks
     Chain::PRIVATE_GETH.should eq 1337
