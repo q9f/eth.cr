@@ -5,7 +5,7 @@ description: "A straightforward library to build, sign, and broadcast Ethereum t
 authors:
   - Afr Schoe <crystal@q9f.cc>
 
-crystal: 1.6.2
+crystal: 1.8.1
 
 license: APLv2
 
